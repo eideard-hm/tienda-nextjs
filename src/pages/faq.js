@@ -1,14 +1,10 @@
-import Link  from 'next/link'
+import Layout from '../components/layout'
 
 const FAQ = () => {
     return (
-        <>
-            <h1>Welcome to FAQ</h1>
-            <hr />
-            <Link href='/'>
-            <a>Home</a>
-            </Link>
-        </>
+        <Layout title='FAQ'>
+            You are in FAQ page
+        </Layout>
     )
 }
 

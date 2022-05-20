@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import style from '../../styles/layout.module.css';
+import Menu from './menu';
 
 const Layout = ({ children, title }) => {
   return (
@@ -9,9 +11,11 @@ const Layout = ({ children, title }) => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <div>{children}</div>
+      <Menu />
+
+      <div className={style.container}>{children}</div>
     </>
   )
-}
+} 
 
 export default Layout
